@@ -5,20 +5,20 @@
 class Jotmd < Formula
   desc "Terminal Markdown notes app"
   homepage "https://github.com/gonfff/jotmd"
-  version "0.0.5"
+  version "0.0.6"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/gonfff/jotmd/releases/download/v0.0.5/jotmd_0.0.5_darwin_amd64.tar.gz"
-    sha256 "99acd17b8b6d42071d8267d71628eb9bc7caa06b768289abb2e5ee9a5464d464"
+    url "https://github.com/gonfff/jotmd/releases/download/v0.0.6/jotmd_0.0.6_darwin_amd64.tar.gz"
+    sha256 "9bd03d8d52fa370cb2c5516178f3e5dd29b78a32e146d8d00520a37f4c480be6"
 
     define_method(:install) do
       bin.install "jotmd"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/gonfff/jotmd/releases/download/v0.0.5/jotmd_0.0.5_darwin_arm64.tar.gz"
-    sha256 "3c2e47d034581e89d1cfce1f98c8b347d6ee593ede76706d58721832ec69dd35"
+    url "https://github.com/gonfff/jotmd/releases/download/v0.0.6/jotmd_0.0.6_darwin_arm64.tar.gz"
+    sha256 "fca17561076ec545cff914c24272d7e3e99a6c905832b82eacb71e06ae8c8214"
 
     define_method(:install) do
       bin.install "jotmd"
